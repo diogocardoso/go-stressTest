@@ -38,27 +38,29 @@ docker run <sua imagem docker> —url=http://google.com —requests=1000 —conc
 
 ## Instalação:
 
-1. Clone o repositório:
+### 1. Clone o repositório:
 
 ```
 git clone https://github.com/diogocardoso/go-stressTest.git
 ```
 
-2. Construa a imagem Docker:
+### 2. Construa a imagem Docker:
+
 
 ```
 docker build -t stresstest .
 ```
 
-3. Execute a aplicação:
+### 3. Execute a aplicação:
 
-### Parâmetros
+#### Parâmetros
 ```
 - `--url`: URL do serviço a ser testado (obrigatório)
 - `--requests`: Número total de requisições a serem realizadas (obrigatório)
 - `--concurrency`: Número de requisições simultâneas (opcional, padrão: 1)
 ```
-### Exemplo de Uso
+
+#### Exemplo de Uso
 
 - Executar 1000 requisições com 10 chamadas simultâneas
 
@@ -66,7 +68,7 @@ docker build -t stresstest .
 docker run stresstest --url=http://google.com --requests=1000 --concurrency=10
 ```
 
-### Resultado:
+#### Resultado:
 
 ```
 === Relatório de Teste de Carga ===
