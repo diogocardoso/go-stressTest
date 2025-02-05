@@ -33,7 +33,7 @@ Entrada de Parâmetros via CLI:
 Poderemos utilizar essa aplicação fazendo uma chamada via docker. Ex:
 
 ```
-docker run <sua imagem docker> —url=http://google.com —requests=1000 —concurrency=10
+docker run stresstest —url=http://google.com —requests=1000 —concurrency=10
 ```
 
 ## Instalação:
