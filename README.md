@@ -52,21 +52,21 @@ docker build -t stresstest .
 
 3. Execute a aplicação:
 
+### Parâmetros
 ```
-# Parâmetros
-
 - `--url`: URL do serviço a ser testado (obrigatório)
 - `--requests`: Número total de requisições a serem realizadas (obrigatório)
 - `--concurrency`: Número de requisições simultâneas (opcional, padrão: 1)
+```
+### Exemplo de Uso
 
-# Exemplo de Uso
-#Executar 1000 requisições com 10 chamadas simultâneas
-
-docker run stresstest --url=http://google.com --requests=1000 --concurrency=10
+- Executar 1000 requisições com 10 chamadas simultâneas
 
 ```
+docker run stresstest --url=http://google.com --requests=1000 --concurrency=10
+```
 
-## Resultado:
+### Resultado:
 
 ```
 === Relatório de Teste de Carga ===
